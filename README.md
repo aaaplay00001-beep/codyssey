@@ -67,3 +67,8 @@ https://github.com/microsoft/WSL/releases/tag/3.0.3
 캡쳐6
 <img width="835" height="302" alt="image" src="https://github.com/user-attachments/assets/13c3faae-2d99-4810-9c8f-0eb33b188204" />
 ls -l                   # 변경 전 캡처
+<img width="383" height="173" alt="image" src="https://github.com/user-attachments/assets/78ee10cf-5b3c-40ab-86eb-b240c6c91864" />
+변경 후 캡쳐
+
+<img width="238" height="42" alt="image" src="https://github.com/user-attachments/assets/ee3b885f-9f1d-4aaf-8496-a8f560d582dd" />
+깃허브 캡
