@@ -8,6 +8,7 @@
 ## 2. 수행 체크리스트
 - [x] 도구 설치 (Docker/Git/VSCode)
 - [x] WSL2 엔진 설치
+
 - [ ] Ubuntu 배포판 설치
 - [ ] 터미널 기본 조작
 - [ ] 권한 실습
@@ -52,10 +53,9 @@ PS> wsl -l -v
 ```
 
 > 참고: `(괄호 메모)`는 **아직 안 한 작업 표시**예요. 작업하면 실제 로그로 교체하면 됩니다.
+```
 
 노션
-
-
 https://pingmong.notion.site/codyssey
 
 
@@ -63,3 +63,7 @@ https://pingmong.notion.site/codyssey
 
 
 https://github.com/microsoft/WSL/releases/tag/3.0.3
+<img width="646" height="450" alt="image" src="https://github.com/user-attachments/assets/c176a622-0445-4c7f-816d-2fdbc7a84aea" />
+캡쳐6
+<img width="835" height="302" alt="image" src="https://github.com/user-attachments/assets/13c3faae-2d99-4810-9c8f-0eb33b188204" />
+ls -l                   # 변경 전 캡처
