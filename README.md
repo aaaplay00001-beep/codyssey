@@ -50,6 +50,8 @@ https://github.com/microsoft/WSL/releases/tag/3.0.3
 ls -l                   # 변경 전 캡처
 <img width="383" height="173" alt="image" src="https://github.com/user-attachments/assets/78ee10cf-5b3c-40ab-86eb-b240c6c91864" />
 변경 후 캡쳐
+<img width="905" height="82" alt="image" src="https://github.com/user-attachments/assets/803467ad-b74f-4a8d-ad22-7c2f0ac88790" />
+미션5
 
 <img width="238" height="42" alt="image" src="https://github.com/user-attachments/assets/ee3b885f-9f1d-4aaf-8496-a8f560d582dd" />
 깃허브 캡
