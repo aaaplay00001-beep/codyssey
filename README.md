@@ -53,6 +53,13 @@ PS> wsl -l -v
 
 > 참고: `(괄호 메모)`는 **아직 안 한 작업 표시**예요. 작업하면 실제 로그로 교체하면 됩니다.
 
-노션 https://pingmong.notion.site/codyssey 
+노션
+
+
+https://pingmong.notion.site/codyssey
+
+
 <img width="402" height="45" alt="image" src="https://github.com/user-attachments/assets/acac91fb-20f6-44bb-a6c3-e703a1c33929" />
+
+
 https://github.com/microsoft/WSL/releases/tag/3.0.3
