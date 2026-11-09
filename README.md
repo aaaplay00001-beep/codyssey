@@ -56,6 +56,11 @@ ls -l                   # 변경 전 캡처
 
 <img width="425" height="228" alt="image" src="https://github.com/user-attachments/assets/8d5fe6b0-58b6-4daf-a1f6-3c9e1232d7b7" />
 홍길동
+<img width="332" height="223" alt="image" src="https://github.com/user-attachments/assets/c58c4004-60d2-40c1-8107-06e6b90a8d2a" />
+바인드마운
 
+
+<img width="816" height="83" alt="image" src="https://github.com/user-attachments/assets/0f187a83-83ef-4a17-b7a1-d4c6258fe890" />
+블룸
 <img width="238" height="42" alt="image" src="https://github.com/user-attachments/assets/ee3b885f-9f1d-4aaf-8496-a8f560d582dd" />
 깃허브 캡
