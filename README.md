@@ -1,59 +1,40 @@
 # 개발 워크스테이션 구축
 
-## 1. 실행 환경
-- OS: Windows 11 + WSL2 (Ubuntu)
-- Docker: 4.98.0
+터미널, Docker, Git을 직접 세팅하며 재현 가능한 개발 환경을 구성하는 미션입니다.
+
+## 1. 프로젝트 개요
+- 리눅스 CLI, Docker, Git/GitHub를 활용해 개발 워크스테이션을 구축한다.
+- "내 컴퓨터에서만 돌아가는 문제"를 줄이고, 누구나 같은 방식으로 실행 가능한 환경을 목표로 한다.
+
+## 2. 실행 환경
+- OS: Windows + WSL2 (Ubuntu)
+- Shell: bash
+- Docker Desktop: 4.98.0
 - Git: 2.56.0
+- Editor: VSCode
 
-## 2. 수행 체크리스트
-- [x] 도구 설치 (Docker/Git/VSCode)
-- [x] WSL2 엔진 설치
-
-- [ ] Ubuntu 배포판 설치
-- [ ] 터미널 기본 조작
-- [ ] 권한 실습
-- [ ] Docker 점검 + hello-world
-- [ ] Dockerfile 빌드/실행
-- [ ] 포트 매핑
+## 3. 수행 체크리스트
+- [x] 터미널 기본 조작
+- [x] 권한 변경 실습
+- [x] Docker 설치 / 점검
+- [x] hello-world 실행
+- [x] ubuntu 컨테이너 실행 / 진입
+- [x] Git 설정 + GitHub / VSCode 연동
+- [x] (보너스) GitHub SSH 키 설정
+- [ ] Dockerfile 빌드 / 실행
+- [ ] 포트 매핑 접속
 - [ ] 바인드 마운트 / 볼륨 영속성
-- [ ] Git + GitHub 연동
 
-## 3. 수행 로그
+## 4. 터미널 조작 로그
 
-### 3-0. 도구 설치 (Windows 호스트)
+### 현재 위치 / 목록 확인
+​```bash
+$ pwd
+(여기에 실제 출력)
 
-winget으로 Docker / Git / VSCode 설치:
-
-```powershell
-PS> winget install --id Docker.DockerDesktop -e ...
-Successfully installed
-
-PS> winget install --id Git.Git -e ...
-No available upgrade found.   # 기존 설치 확인
-
-PS> winget install --id Microsoft.VisualStudioCode -e ...
-No available upgrade found.   # 기존 설치 확인
-```
-→ Docker Desktop 4.98.0 설치 완료, Git/VSCode 기설치 확인
-
-### 3-1. WSL2 설치
-
-```powershell
-PS> wsl --update
-Linux용 Windows 하위 시스템 3.0.3이(가) 설치되었습니다.
-
-PS> wsl -l -v
-  NAME              STATE      VERSION
-* docker-desktop    Stopped    2
-```
-→ WSL2 엔진 설치 확인. (docker-desktop은 Docker 내부 배포판, 실습용 Ubuntu는 다음 단계에서 설치)
-
-### 3-2. Ubuntu 설치
-(Ubuntu 설치 후 여기에 이어서 작성 예정)
-```
-
-> 참고: `(괄호 메모)`는 **아직 안 한 작업 표시**예요. 작업하면 실제 로그로 교체하면 됩니다.
-```
+$ ls -la
+(여기에 실제 출력)
+​```
 
 노션
 https://pingmong.notion.site/codyssey
