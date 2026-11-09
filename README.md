@@ -53,5 +53,9 @@ ls -l                   # 변경 전 캡처
 <img width="905" height="82" alt="image" src="https://github.com/user-attachments/assets/803467ad-b74f-4a8d-ad22-7c2f0ac88790" />
 미션5
 
+
+<img width="425" height="228" alt="image" src="https://github.com/user-attachments/assets/8d5fe6b0-58b6-4daf-a1f6-3c9e1232d7b7" />
+홍길동
+
 <img width="238" height="42" alt="image" src="https://github.com/user-attachments/assets/ee3b885f-9f1d-4aaf-8496-a8f560d582dd" />
 깃허브 캡
