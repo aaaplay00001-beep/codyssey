@@ -446,9 +446,11 @@ bash: $'\E[200~mkdir': command not found
 
 ## 8. 🌐 Git 설정 및 GitHub 연동
 
+### 8-1. 사용자 정보 설정
+
 ```bash
-git config --global user.name "본인 이름"
-git config --global user.email "본인 이메일"
+git config --global user.name "노 연 주"
+git config --global user.email "aaaplay00001@gmail.com"
 git config --global init.defaultbranch main
 git config --global --list
 ```
@@ -462,29 +464,61 @@ init.defaultbranch=main
 <img width="238" height="42" alt="image" src="https://github.com/user-attachments/assets/ee3b885f-9f1d-4aaf-8496-a8f560d582dd" />
 
 
-```bash
-git remote -v
-```
-
-```text
-(여기에 실제 출력 붙여넣기)
-origin  https://github.com/<계정>/<저장소>.git (fetch)
-origin  https://github.com/<계정>/<저장소>.git (push)
-```
-
-### 8-3. 커밋 및 push 기록
+### 8-2. 저장소 초기화
 
 ```bash
-git add .
-git commit -m "docs: Docker 실습 README 작성"
-git push origin main
-git log --oneline -5
-git status
+User@5F-105 UCRT64 ~
+$ cd "C:\Users\User\Desktop\my-web-folder"
+
+User@5F-105 UCRT64 ~/Desktop/my-web-folder
+$ git init
+Initialized empty Git repository in C:/Users/User/Desktop/my-web-folder/.git/
 ```
 
-```text
-(여기에 git push 와 git log --oneline 실제 출력 붙여넣기)
+### 8-3. 원격 저장소 확인 (`git remote -v`)
+
+```bash
+User@5F-105 UCRT64 ~/Desktop/my-web-folder (main)
+$ git remote -v
+origin  https://github.com/aaaplay00001-beep/codyssey.git (fetch)
+origin  https://github.com/aaaplay00001-beep/codyssey.git (push)
 ```
+
+### 8-4. push 기록 (`git push`)
+
+```bash
+User@5F-105 UCRT64 ~/Desktop/my-web-folder (main)
+$ git push -u origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 911 bytes | 911.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/aaaplay00001-beep/codyssey.git
+   fa660d8..5bab532  main -> main
+branch 'main' set up to track 'origin/main'.
+```
+
+### 8-5. 커밋 이력 (`git log --oneline`)
+
+```bash
+User@5F-105 UCRT64 ~/Desktop/my-web-folder (main)
+$ git log --oneline -5
+5bab532 (HEAD -> main, origin/main) Merge branch 'main' of https://github.com/aaaplay00001-beep/codyssey
+f2cfee8 docs: Docker 실습 README 및 웹 서버 파일 추가
+fa660d8 Update Docker info and replace image in README
+42b1825 Update README.md
+792a294 Update README.md
+```
+
+- `HEAD -> main, origin/main` 이 같은 커밋(`5bab532`)을 가리키므로 로컬과 원격이 동기화된 상태입니다.
+- 최상단 `Merge branch 'main'` 커밋은 GitHub 웹에서 먼저 수정한 README(`fa660d8`)와 로컬 커밋(`f2cfee8`)을 합친 병합 커밋입니다.
+
+### 8-6. GitHub 저장소
+
+- **저장소 링크:** https://github.com/aaaplay00001-beep/codyssey
 
 노션 정리: https://pingmong.notion.site/codyssey
 WSL 릴리스: https://github.com/microsoft/WSL/releases/tag/3.0.3
