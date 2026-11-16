@@ -147,6 +147,8 @@ failed to connect to the docker API at npipe:////./pipe/dockerDesktopLinuxEngine
 ```
 
 <img width="402" height="45" alt="image" src="https://github.com/user-attachments/assets/acac91fb-20f6-44bb-a6c3-e703a1c33929" />
+<img width="1783" height="815" alt="image" src="https://github.com/user-attachments/assets/782e2f02-6fa7-4f8a-928d-ca37e2364721" />
+
 
 > 데몬이 꺼져 있으면 `docker info` 의 Server 항목에서 연결 오류가 나므로, 이 명령이 데몬 상태의 증거가 됩니다.
 
@@ -416,13 +418,42 @@ bash: $'\E[200~mkdir': command not found
 ```bash
 git config --global user.name "본인 이름"
 git config --global user.email "본인 이메일"
+git config --global init.defaultbranch main
+git config --global --list
 ```
 
-**원격 저장소 확인 및 push 기록**
+```text
+user.name=노 연 주
+user.email=aaaplay00001@gmail.com
+init.defaultbranch=main
+```
+
 <img width="238" height="42" alt="image" src="https://github.com/user-attachments/assets/ee3b885f-9f1d-4aaf-8496-a8f560d582dd" />
 
 
----
+```bash
+git remote -v
+```
+
+```text
+(여기에 실제 출력 붙여넣기)
+origin  https://github.com/<계정>/<저장소>.git (fetch)
+origin  https://github.com/<계정>/<저장소>.git (push)
+```
+
+### 8-3. 커밋 및 push 기록
+
+```bash
+git add .
+git commit -m "docs: Docker 실습 README 작성"
+git push origin main
+git log --oneline -5
+git status
+```
+
+```text
+(여기에 git push 와 git log --oneline 실제 출력 붙여넣기)
+```
 
 노션 정리: https://pingmong.notion.site/codyssey
 WSL 릴리스: https://github.com/microsoft/WSL/releases/tag/3.0.3
