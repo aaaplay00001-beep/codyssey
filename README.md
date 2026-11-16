@@ -123,10 +123,12 @@ hello volume
 https://pingmong.notion.site/codyssey
 
 
+docker 처음
 <img width="402" height="45" alt="image" src="https://github.com/user-attachments/assets/acac91fb-20f6-44bb-a6c3-e703a1c33929" />
 
 
 https://github.com/microsoft/WSL/releases/tag/3.0.3
+헬로월드
 <img width="646" height="450" alt="image" src="https://github.com/user-attachments/assets/c176a622-0445-4c7f-816d-2fdbc7a84aea" />
 캡쳐6
 <img width="835" height="302" alt="image" src="https://github.com/user-attachments/assets/13c3faae-2d99-4810-9c8f-0eb33b188204" />
