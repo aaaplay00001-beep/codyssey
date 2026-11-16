@@ -276,7 +276,7 @@ PS C:\WINDOWS\system32> docker images
 **Dockerfile**
 
 ```dockerfile
-FROM nginx
+FROM nginx PS C:\Users\User\Desktop\my-web-folder> docker build -t my-web .
 COPY index.html /usr/share/nginx/html/index.html
 ```
 
