@@ -183,7 +183,6 @@ PS C:\WINDOWS\system32> docker images
 | `docker run -it ubuntu` | **Exited** | `exit` 가 컨테이너의 메인 프로세스(PID 1, bash)를 종료시킴 |
 | `docker exec -it mybox bash` | **Up 유지** | 이미 실행 중인 컨테이너에 *추가* 프로세스를 붙인 것이라, 그 프로세스만 종료됨 |
 
-> 📝 `Exited (137)` 은 프로세스가 강제 종료(SIGKILL)되었을 때의 종료 코드입니다. 정상 `exit` 라면 보통 `Exited (0)` 이므로, 이 로그는 `docker stop` 이나 Docker Desktop 재시작 등으로 종료된 결과일 수 있습니다. 실제 수행 상황에 맞게 설명을 수정하세요.
 
 ### 5-5. 커스텀 웹 서버 이미지 빌드 및 실행
 
@@ -193,25 +192,6 @@ PS C:\WINDOWS\system32> docker images
 FROM nginx
 COPY index.html /usr/share/nginx/html/index.html
 ```
-
-**빌드 및 실행**
-
-```powershell
-PS C:\Users\User\Desktop\my-web-folder> docker build -t my-web .
-[+] Building 0.1s (1/1) FINISHED ...
-
-PS C:\Users\User\Desktop\my-web-folder> docker images my-web
-REPOSITORY   TAG      IMAGE ID       CREATED          SIZE
-my-web       latest   ✏️ 실제 ID     ✏️ 실제 값        ✏️ 실제 값
-
-PS C:\Users\User\Desktop\my-web-folder> docker run -d -p 1205:80 --name my-web my-web
-PS C:\Users\User\Desktop\my-web-folder> docker ps
-CONTAINER ID   IMAGE    COMMAND                  CREATED         STATUS         PORTS              NAMES
-8282eaa89860   my-web   "/docker-entrypoint.…"   5 seconds ago   Up 4 seconds   0.0.0.0:1205->80   my-web
-```
-
-- **이미지 태그:** `my-web:latest`
-- **이미지 ID:** ✏️ `docker images` 출력의 IMAGE ID 기재
 
 ### 5-6. 포트 매핑 및 접속 확인
 
