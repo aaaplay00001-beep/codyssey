@@ -89,8 +89,8 @@ my-web-folder/            # 프로젝트 루트 (docker build / run 을 실행�
 ```powershell
 PS C:\WINDOWS\system32> docker --version
 Docker version 29.9.2, build a82e528
-
-PS C:\WINDOWS\system32> docker info
+```
+```
 PS C:\WINDOWS\system32> docker info
 Client:
  Version:    29.9.2
@@ -180,10 +180,8 @@ Server:
 ```
 
 <img width="402" height="45" alt="image" src="https://github.com/user-attachments/assets/acac91fb-20f6-44bb-a6c3-e703a1c33929" />
-<img width="1783" height="815" alt="image" src="https://github.com/user-attachments/assets/782e2f02-6fa7-4f8a-928d-ca37e2364721" />
+<img width="531" height="561" alt="image" src="https://github.com/user-attachments/assets/3895911a-2b1c-4ffd-a73b-e3f89fa53414" />
 
-
-> 데몬이 꺼져 있으면 `docker info` 의 Server 항목에서 연결 오류가 나므로, 이 명령이 데몬 상태의 증거가 됩니다.
 
 ### 5-2. hello-world 실행
 
