@@ -369,3 +369,6 @@ git config --global user.email "본인 이메일"
 
 
 ---
+
+노션 정리: https://pingmong.notion.site/codyssey
+WSL 릴리스: https://github.com/microsoft/WSL/releases/tag/3.0.3
