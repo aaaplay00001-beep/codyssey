@@ -306,8 +306,6 @@ PS C:\Users\User\Desktop\my-web-folder> docker run -d -p 1206:80 --name my-web-b
 # → index.html 수정 후 브라우저 새로고침 시 변경 내용이 바로 반영됨
 ```
 
-<img width="816" alt="바인드 마운트 반영 확인" src="https://github.com/user-attachments/assets/0f187a83-83ef-4a17-b7a1-d4c6258fe890" />
-
 #### 절대 경로 vs 상대 경로
 
 <img width="332" height="223" alt="image" src="https://github.com/user-attachments/assets/c58c4004-60d2-40c1-8107-06e6b90a8d2a" />
@@ -334,8 +332,6 @@ vol-test
 PS C:\Users\User\Desktop\my-web-folder> docker run -it --rm -v mydata:/data ubuntu cat /data/memo.txt
 hello volume
 ```
-
-<img width="816" height="83" alt="image" src="https://github.com/user-attachments/assets/0f187a83-83ef-4a17-b7a1-d4c6258fe890" />
 
 #### 볼륨 백업·복원 방법
 
