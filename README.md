@@ -37,7 +37,7 @@
 | OS | Windows 11 (WSL2 backend) |
 | Shell | PowerShell, Git Bash(UCRT64), Ubuntu 컨테이너 내부 bash |
 | Docker Version | 29.9.2 (Docker Desktop 4.99.0) |
-| Git Version | 📸 `git --version` 결과를 여기에 입력 (예: git version 2.xx.x.windows.x) |
+| Git Version | git version 2.56.1.windows.1 |
 
 ---
 
