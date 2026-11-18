@@ -164,7 +164,7 @@ rm c.txt
 ls -la
 ```
 
-📸 위 명령을 실행한 **터미널 출력 캡처**를 여기에 붙여넣으세요. (명령어 입력과 출력이 함께 보이게)
+
 
 ### 5-4. 권한 실습
 
@@ -240,7 +240,6 @@ hello ubuntu
 root@d35aab0d3a21:/# exit
 ```
 
-📸 `ls` 출력 결과 캡처를 여기에 붙여넣으세요.
 
 **컨테이너 상태 관찰**
 
@@ -277,8 +276,6 @@ PS C:\WINDOWS\system32> docker logs mybox
 PS C:\WINDOWS\system32> docker stats --no-stream
 ```
 
-📸 `docker logs`, `docker stats --no-stream` **출력 캡처**를 여기에 붙여넣으세요.
-
 **`run -it` 와 `exec -it` 의 차이**
 
 | 방식 | 종료(`exit`) 시 컨테이너 상태 | 이유 |
@@ -310,8 +307,6 @@ PS C:\Users\User\Desktop\my-web-folder> docker build -t my-web .
 PS C:\Users\User\Desktop\my-web-folder> docker run -d -p 1205:80 --name my-web my-web
 PS C:\Users\User\Desktop\my-web-folder> docker ps
 ```
-
-📸 위 3개 명령의 **실제 출력 캡처**를 여기에 붙여넣으세요. (빌드 성공 메시지, 컨테이너 ID, `docker ps`의 `0.0.0.0:1205->80/tcp`가 보이게)
 
 ### 5-7. 포트 매핑 및 접속 확인
 
@@ -377,8 +372,6 @@ PS C:\Users\User\Desktop\my-web-folder> docker run -it --rm -v mydata:/data ubun
 hello volume
 ```
 
-📸 **삭제 전 `cat /data/memo.txt` 출력**(위 2번의 `cat` 결과)도 캡처해서 여기에 붙여넣으세요. 삭제 전과 삭제 후 출력이 모두 `hello volume` 이면 영속성이 증명됩니다.
-
 #### 볼륨 백업·복원 방법
 
 볼륨 내용을 tar 파일로 백업하고, 필요 시 새 볼륨에 복원할 수 있습니다.
@@ -391,8 +384,6 @@ docker run --rm -v mydata:/data -v ${PWD}:/backup ubuntu tar czf /backup/mydata-
 docker volume create mydata2
 docker run --rm -v mydata2:/data -v ${PWD}:/backup ubuntu tar xzf /backup/mydata-backup.tar.gz -C /data
 ```
-
-📸 백업 실행 후 `dir`(또는 `ls`)로 `mydata-backup.tar.gz` 가 생성된 **캡처**를 여기에 붙여넣으세요. (이 부분은 선택 사항이므로 수행하지 않았다면 위 백업·복원 코드블록과 이 문장을 삭제하세요.)
 
 ---
 
